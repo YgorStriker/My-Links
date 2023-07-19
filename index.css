@@ -2,21 +2,35 @@
     margin: 0;
     padding: 0;
 }
+@keyframes drowning {
+    from {background-position: 0 0;}
+    to {background-position: 100% 100%;}
+}
+@keyframes efeitinho {
+    from {color: #0077ff;}
+    to {color:aqua}
+}
 body {
-    background-color: black;
+    background-image: linear-gradient(to top, #110121 0%, #2e0580 37%, #1d9dc4 67%, #110122 100%);
+    background-size: 300% 300%;
+    animation: drowning 7s infinite alternate;
 }
 .container {
-    width: 320px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: black;
+    width: 300px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    animation: animacao 5s;
 }
 img {
     border-radius: 20px;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
 }
 h1 {
     color: white;
@@ -38,6 +52,11 @@ a {
     font-family: 'Quicksand', sans-serif;
     border-radius: 5px;
 }
+a:hover {
+    background: linear-gradient(to top, #8b8c8c, #ffff);
+    color: cyan;
+    box-shadow: -2px 2px 3px white, 2px 2px 3px white, 2px -2px 0 white, -2px -2px 0 #ffff;
+}
 ul {
     margin-top: 35px;
     list-style-type: none;
@@ -50,6 +69,8 @@ p {
     font-family: 'Tektur', cursive;
 }
 footer {
+    margin-top: 50px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
+    animation: efeitinho 8s infinite alternate-reverse;
 }
