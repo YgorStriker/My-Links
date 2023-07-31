@@ -28,9 +28,16 @@ body {
     animation: animacao 5s;
 }
 img {
-    border-radius: 20px;
+    border-radius: 50%;
     width: 300px;
     height: 300px;
+    border: 2px solid aqua;
+}
+.container hr {
+    margin-top: 18px;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), #2e0580, #1d9dc4, rgba(0, 255, 0, 0));
+    border: none;
 }
 h1 {
     color: white;
